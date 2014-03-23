@@ -5,7 +5,7 @@ function getDomainInfo(url) {
 
 	var domain = a.hostname;
 	var requestURL = "http://dazzlepod.com/ip/"+domain+".json";
-    //alert(requestURL);
+    alert(requestURL);
     console.log(requestURL);
 	return httpGet(requestURL);
 }
@@ -34,7 +34,7 @@ function httpGet(theUrl)
 
 var check = self.port.on("clicked", function(url) {
    	var json = getDomainInfo(url);
+    alert(json);
     console.log(json);
-   	//alert(json);
 });
 
